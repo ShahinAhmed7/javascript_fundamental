@@ -13,33 +13,40 @@
     <div class="php-style">
         <h2>Javasrcipt Fundamental</h2>
 
-		<div id="show"></div>
+		
 		<input type="text" id="codeText">
-		<button onclick="checkCooding()">Check</button>
+		<button onclick="checkCoding()">Check</button>
+		<div id="show"></div>
+
 
 		<script type="text/JavaScript">
 
-			function checkCooding(){
-  			
-  			var txt;
-  			var cooding = document.getElementById("codeText").value;
+		function checkCoding(){	
+			var txt;
+			var coding = document.getElementById("codeText").value;
 
-				switch(expression){
+
+			switch(coding){
 				case "java":
-					txt = "Hello World";
+					txt = "Hi";
 					break;
 
-				case "html":
-					txt = "Hello ";
+				case "php":
+					txt = "Hi";
+					break;
+
+				case "css":
+					txt = "Hello hi";
 					break;
 
 				default:
-				txt = " World";
-
+					txt = "Nothing";
 			}
-			document.getElementById("show") .innerHTML = txt;
 
-			}
+
+				document.getElementById("show") .innerHTML = txt;
+
+		}
 
 
 
